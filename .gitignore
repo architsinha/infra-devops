@@ -1,0 +1,42 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+crash.log
+terraform.tfplan
+
+# Ansible
+*.retry
+*.log
+*.pyc
+__pycache__/
+ansible.cfg
+inventory/*
+!inventory/hosts  # if you're keeping a static hosts file
+
+# SSH keys
+*.pem
+*.pub
+id_rsa
+id_rsa.pub
+
+# Secrets
+secrets.yml
+vault_pass.txt
+
+# System/IDE files
+.DS_Store
+*.swp
+*.swo
+*.bak
+*.tmp
+*.out
+
+# VS Code
+.vscode/
+
+# Python virtualenvs
+venv/
+.env/
