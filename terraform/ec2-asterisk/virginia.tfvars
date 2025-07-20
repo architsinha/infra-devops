@@ -1,0 +1,18 @@
+aws_region        = "us-east-1"
+vpc_cidr          = "10.2.0.0/16"
+vpc_name          = "archit-us-vpc"
+subnet_cidr       = "10.2.1.0/24"
+availability_zone = "us-east-1a"
+subnet_name       = "us-voip-subnet"
+igw_name          = "archit-us-igw"
+route_table_name  = "us-rt"
+key_name          = "ec2-virginia-key.pem"
+public_key_path   = "/home/archit/.ssh/id_rsa.pub"
+sg_name           = "prod-sg"
+sg_description    = "Allow SSH and SIP for Prod"
+ami_id            = "ami-0fc682b3f0e1487f0"
+instance_type     = "t3.small"
+instance_name     = "asterisk-prod-instance"
+ebs_volume_size   = 20
+kms_key_id        = ""
+

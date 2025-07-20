@@ -95,6 +95,10 @@ resource "aws_security_group" "asterisk_sg" {
   }
 }
 
+terraform {
+  backend "s3" {}
+}
+
 # EC2 Instance
 resource "aws_instance" "asterisk" {
   ami                    = var.ami_id

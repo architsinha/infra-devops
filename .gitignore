@@ -6,6 +6,8 @@
 .terraform.lock.hcl
 crash.log
 terraform.tfplan
+!mumbai.tfvars
+!virginia.tfvars
 
 # Ansible
 *.retry

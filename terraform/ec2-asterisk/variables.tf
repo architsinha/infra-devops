@@ -95,10 +95,12 @@ variable "instance_name" {
 }
 
 variable "ebs_volume_size" {
+  description = "Size of the EBS root volume in GB"
   default = 20
 }
 
 variable "kms_key_id" {
   description = "KMS key ID for EBS encryption (optional). Leave blank to use AWS-managed key"
+  type        = string
   default     = ""  # leave empty to use the default AWS-managed KMS key
 }
